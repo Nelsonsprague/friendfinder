@@ -11,9 +11,6 @@ app.use(express.json());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
-app.get("/", function(req, res) {
-    res.json(path.join(__dirname, "./app/public/home.html"));
-    });
 
 app.listen(PORT, function(){
     console.log("You got it connected on http://localhost:" + PORT)
