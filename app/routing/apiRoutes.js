@@ -32,6 +32,7 @@ module.exports = function(app) {
             }
         }
 
+    
         friendsArray.push(currUser);
         res.json({
             matchName: bestMatch.name,
